@@ -64,11 +64,11 @@ const au1 = new AdminUser("Lois", 23, "I like Granola bars!");
 
 u1.publicMethod();
 au1.publicMethod();
-// u1.privateMethod(); don't work outside the class
+// u1.#privateMethod(); //don't work outside the class
 // au1.privateMethod(); don't work outside the class.
 u1.usePrivateMethod();
 au1.usePrivateMethod();
 console.log(User.prototype); // Doesn't show privateMethod in the prototype.
 
-// u1.staticMethod(); Does not work.
+// u1.staticMethod(); //Does not work.
 User.staticMethod();
